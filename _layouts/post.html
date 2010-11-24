@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="post">
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <span class="sidebar meta">{{ post.date | date_to_long_string }}.</span>
+  {{ post.content }}
+  <small><em>Posted in {{ post.categories | array_to_sentence_string }}</em></small>    
+</div>

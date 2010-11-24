@@ -4,4 +4,5 @@ server_port: 4000
 pygments:    true
 markdown:    rdiscount
 permalink:   /:year/:month/:title/
+site_title:  rollback
 site_url:    http://jrdi.github.com
