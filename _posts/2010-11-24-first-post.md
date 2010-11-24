@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post
-categories: [new, post]
+categories: new, post
 ---
 
 Hello!   
