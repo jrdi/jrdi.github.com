@@ -3,11 +3,20 @@ layout: default
 title: blog
 ---
 
-{% for post in site.posts limit:5 %}
+{% for post in paginator.posts %}
   <div class="post">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <span class="sidebar meta">{{ post.date | date_to_long_string }}.</span>
+    <span class="sidebar">{{ post.date | date_to_long_string }}.</span>
     {{ post.content }}
     <small><em>Posted in {{ post.categories | array_to_sentence_string }}</em></small>    
   </div>
 {% endfor %}
+{% if paginator.previous_page > 1 %}
+  <a href="/page{{paginator.previous_page}}"> &laquo; Previous</a>
+{% endif %}
+{% if paginator.previous_page > 0 %}
+  <a href="/"> &laquo; Previous</a>
+{% endif %}
+{% if paginator.next_page > 0 %}   
+  <a href="/page{{paginator.next_page}}">Next &raquo;</a>
+{% endif %}

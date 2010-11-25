@@ -2,5 +2,10 @@
 layout: default
 ---
 
-<a href="/">go home ↑</a>
+
+{% if page.skills %}
+  <a href="/work.html">go works ↑</a>
+{% else %}
+  <a href="/">go home ↑</a>
+{% endif %}
 {{ content }}

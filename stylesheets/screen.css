@@ -3,12 +3,12 @@ html,body,hr,pre,span,p,h6,h5,h4,h3,h2,h1,div,code,blockquote,li,ul,ol,dd,dt,dl,
 /* Font & typography */
 a, a:visited {
   text-decoration: none;
-  background-color: #eff1f7;
+  background-color: #FFFDB0;
   color: black;
   padding: 3px;
 }
 a:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #D6D594;
 }
 strong {
   font-weight: bold; 
@@ -58,16 +58,10 @@ body {
   width: 500px;
   margin: 0 auto;
 }
-
+/* Index */
 div.post {
   position: relative;
-  margin-top: 60px;
-}
-
-.meta {
-  font-size: .8em;
-  color: #999;
-  font-style: italic;
+  margin: 40px 0;
 }
 
 div.post span.sidebar {
@@ -79,4 +73,48 @@ div.post span.sidebar {
   border-right: 1px dotted #999;
   padding-right: 10px;
   display: block;
+	font-size: .8em;
+  color: #999;
+  font-style: italic;
+}
+div.post span.extra {
+  position: absolute;
+  top: 55px;
+  left: -225px;
+  width: 200px;
+  text-align: right;
+  border-right: 1px dotted #999;
+  padding-right: 10px;
+  display: block;
+	font-size: .8em;
+  color: #999;
+  font-style: italic;
+}
+/* CV */
+.hresume .vcard {
+	overflow: hidden;
+	background: url('/images/I.jpg') right top no-repeat;
+} 
+.hresume h2 {
+	margin: 1.5em 0 1.1em;
+}
+.hresume ul li {
+	list-style: none;
+	margin: 10px 0 5px 190px;
+}
+.hresume ul li span {
+	display: block;
+	width: 190px;
+	margin-left: -190px;
+	float: left;
+	font-size: 0.9em;
+}
+.hresume ul li strong {
+	display: block;
+	color: #000;
+}
+.hresume ul li small {
+	display: block;
+	font-size: 0.75em;
+	color: #999;
 }
