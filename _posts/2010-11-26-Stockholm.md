@@ -6,5 +6,3 @@ categories: [travel]
 ---                
 
 ![stockholm](/images/stockholm.jpg)
-
-Espero no morir congelado.
