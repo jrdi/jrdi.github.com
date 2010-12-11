@@ -5,7 +5,7 @@ description: Work to puravida
 client: Self-employed
 link: <a href="http://barcelonaonrails.com">barcelonaonrails.com</a>
 categories: [work]   
-skills: [ruby, rails, html, css, mysql]
+skills: [ruby, rails, html, css mysql]
 ---
 
 ![bcnonrails](/images/bcnonrails.jpg)   
