@@ -113,6 +113,24 @@ div.post span.extra {
 	display: block;
 	color: #000;
 }
+.hresume ul li .five_stars {
+	background: url(/images/5-stars.jpg) center right no-repeat;
+}
+.hresume ul li .four_stars {
+	background: url(/images/4-stars.jpg) center right no-repeat;
+}
+.hresume ul li .three_stars {
+	background: url(/images/3-stars.jpg) center right no-repeat;
+}
+.hresume ul li .two_stars {
+	background: url(/images/2-stars.jpg) center right no-repeat;
+}
+.hresume ul li .one_stars {
+	background: url(/images/1-stars.jpg) center right no-repeat;
+}         
+.hresume ul li .zero_stars {
+	background: url(/images/0-stars.jpg) center right no-repeat;
+}
 .hresume ul li small {
 	display: block;
 	font-size: 0.75em;
