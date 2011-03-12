@@ -2,8 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="{{page.description}}" />
-    <title>{{ page.title }} | ruby on brain</title>
+    <meta name="description" content="I am 23 years old, born in Barcelona, Spain. I am a last year telecommunications engineering student and I am working as a web developer." />
+
+    <meta name="keywords" content="jordi, jordi villar, web developer, web, telecommunications, engineer, ruby, php, mysql, freelance, ruby on rails, barcelona, desarrollador web" />
+
+    <link rel="canonical" href="http://jordivillar.com/" />
+    <title>{{ page.title }} | Jordi Villar</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css" />
   </head>
@@ -11,12 +15,27 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1><a href="/">ruby on brain</a></h1>
+        <h1 id="site-title"><a href="/">Jordi Villar</a></h1>
+        <h2 id="site-description">I am a last year telecommunications engineering student and I am working as a web developer.</h2>
       </div>
 
       <div id="content">
         {{ content }}
       </div>
     </div>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21844582-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>

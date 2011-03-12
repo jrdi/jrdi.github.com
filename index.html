@@ -1,22 +1,41 @@
 ---
 layout: default
-title: blog
----
+title: Web developer
+--- 
 
-{% for post in paginator.posts %}
-  <div class="post">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <span class="sidebar">{{ post.date | date_to_long_string }}.</span>
-    {{ post.content }}
-    <small><em>Posted in {{ post.categories | array_to_sentence_string }}</em></small>    
-  </div>
-{% endfor %}
-{% if paginator.previous_page > 1 %}
-  <a href="/page{{paginator.previous_page}}"> &laquo; Previous</a>
-{% endif %}
-{% if paginator.previous_page > 0 %}
-  <a href="/"> &laquo; Previous</a>
-{% endif %}
-{% if paginator.next_page > 0 %}   
-  <a href="/page{{paginator.next_page}}">Next &raquo;</a>
-{% endif %}
+<p>I am 23 years old, born in Barcelona, Spain. I am a last year <strong>telecommunications engineering student</strong>.</p>
+<p>I work as a <strong>web developer</strong> with skills in <strong>Ruby</strong> and <strong>Ruby on Rails</strong> doing usable and accessible websites.</p>
+<p>More information about me:</p>
+<ul class="square">
+    <li>
+        <a href="/cv.html">Curriculum vitae</a>
+    </li>
+    <li>
+        <a href="/work.html">Portfolio</a>
+    </li>
+    <li>
+        <a href="https://github.com/jrdi">GitHub</a>
+    </li>
+    <li>
+        <a href="http://es.linkedin.com/in/jordivillar">LinkedIn</a>
+    </li>
+    <li>
+        If you want to know more about me or my work, please contact me.
+    </li>
+</ul>
+<div class="left">
+  <h2 class="subcontent">Status</h2>
+  <p><strong>Currently</strong> I am working for <a href="http://www.crisalix.com/">Crisalix</a> developing new features for <a href="http://estetix.crisalix.com">e-Stetix</a>.</p>
+</div>
+<div class="right">
+  <h2 class="subcontent">Contact info</h2>
+  <ul>
+      <li><strong>Email: </strong><a href="mailto:jrdi.villar@gmail.com">jrdi.villar@gmail.com</a></li>
+      <li>
+        <strong>Chat: </strong>
+        <img height="9" width="9" style="padding:0 2px 0 0;margin:0;border:none" src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqd6h5gjek2cmqb02cpapc4i6kujq9ehia7frr2b9bioqc4lm2v67u7kbm3ous2155b7scl8sffmi39qasor3gfcrt75ilbivrbeknc2ipjnj0ndolmrllb6dj1igmucgu7693657jfkatvmgnsq34bmiji558ois1&amp;w=9&amp;h=9" alt="">
+        <a href="http://www.google.com/talk/service/badge/Start?tk=z01q6amlqd6h5gjek2cmqb02cpapc4i6kujq9ehia7frr2b9bioqc4lm2v67u7kbm3ous2155b7scl8sffmi39qasor3gfcrt75ilbivrbeknc2ipjnj0ndolmrllb6dj1igmucgu7693657jfkatvmgnsq34bmiji558ois1" target="_blank" title="Click here to chat with Jordi Villar">Live chat</a>
+      </li>
+      <li><strong>Hometown: </strong>Barcelona, Spain</li>
+  </ul>
+</div>

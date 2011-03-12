@@ -5,7 +5,7 @@ a, a:visited {
   text-decoration: none;
   background-color: #FFFDB0;
   color: black;
-  padding: 3px;
+  padding: 2px 5px;
 }
 a:hover {
   border-bottom: 1px solid #D6D594;
@@ -49,15 +49,40 @@ blockquote {
   margin: 0 0 1em 1.6em;
   padding: .2em 0 .2em 1em; 
 }
+ul.square li {
+	list-style: square;
+	margin-left: 20px;
+}
 /* Layout */
 body {
-	color: #2A2A2A;
+	color: #414141;
 	font: 14px/1.5 Georgia, Helvetica, Arial, sans-serif;
+}
+#header {
+	width: 100%;
+	height: 84px;
+	margin: 30px 0 0 0;
 } 
 #container {
   width: 500px;
   margin: 0 auto;
+}  
+#container .left, #container .right {
+	width: 245px;
+	float: left;
+} 
+#container .right {
+	margin-left: 10px;
 }
+
+#site-description {
+	display: none;
+} 
+
+h2.subcontent {
+	margin: 2.5em 0 0.83em;
+}
+
 /* Index */
 div.post {
   position: relative;
