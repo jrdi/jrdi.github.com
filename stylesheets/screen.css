@@ -57,6 +57,8 @@ ul.square li {
 body {
 	color: #414141;
 	font: 14px/1.5 Georgia, Helvetica, Arial, sans-serif;
+	background: url('/images/fabric_1.png');
+	border-top: 5px solid #6A6A6A;
 }
 #header {
 	width: 100%;
