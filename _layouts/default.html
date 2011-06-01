@@ -10,6 +10,14 @@
     <title>{{ page.title }} | Jordi Villar</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css" />
+		<script type="text/javascript" charset="utf-8">
+			function change_years_old() {
+				var m = new Date();
+				document.getElementById("years_old").innerHTML = m.getFullYear() - 1987;
+			}
+			
+			window.onload = change_years_old;
+		</script>
   </head>
 
   <body>
