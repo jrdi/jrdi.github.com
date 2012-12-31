@@ -2,6 +2,6 @@ auto:        true
 lsi:         false
 server_port: 4000
 pygments:    true
-markdown:    rdiscount
+markdown:    maruku
 permalink:   /:year/:month/:title/
 paginate:    5
