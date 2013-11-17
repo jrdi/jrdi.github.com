@@ -8,16 +8,27 @@
 
     <link rel="canonical" href="http://jordivillar.com/" />
     <title>{{ page.title }} · Jordi Villar</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css" />
-		<script type="text/javascript" charset="utf-8">
-			function change_years_old() {
-				var m = new Date();
-				document.getElementById("years_old").innerHTML = m.getFullYear() - 1987;
-			}
-			
-			window.onload = change_years_old;
-		</script>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      });
+
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
   </head>
 
   <body>

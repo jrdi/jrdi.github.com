@@ -2,14 +2,15 @@
 html,body,hr,pre,span,p,h6,h5,h4,h3,h2,h1,div,code,blockquote,li,ul,ol,dd,dt,dl,li,ul,ol,dd,dt,dl,textarea,option,optgroup,select,legend,label,input,form,fieldset,button,tr,th,td,table,caption{margin:0;padding:0}var,strong,span,samp,q,pre,p,kbd,h6,h5,h4,h3,h2,h1,em,div,dfn,code,cite,br,blockquote,address,acronym,abbr,u,ins,del,strong,em,i,b{font-style:normal}var,strong,span,samp,q,pre,p,kbd,h6,h5,h4,h3,h2,h1,em,div,dfn,code,cite,br,blockquote,address,acronym,abbr,u,ins,del,strong,em,i,b,tr,th,td,table,caption{font-weight:normal}var,strong,span,samp,q,pre,p,kbd,h6,h5,h4,h3,h2,h1,em,div,dfn,code,cite,br,blockquote,address,acronym,abbr,u,ins,del,strong,em,i,b,a{text-decoration:none}h6,h5,h4,h3,h2,h1,tt,sup,sub,small,i,hr,big,b{font-size:100%}li,ul,ol,dd,dt,dl{list-style:none}fieldset,img{border:0}tr,th,td,table,caption{text-align:left}table{border-collapse:collapse;border-spacing:0}q:after,q:before{content:''}sup{vertical-align:text-top}sub{vertical-align:text-bottom}
 /* Font & typography */
 a, a:visited {
-  text-decoration: none;
-  background-color: #FFFDB0;
-  color: black;
-  padding: 2px 5px;
+  text-decoration: underline;
+  color: #1F1F1F;
 }
 a:hover {
-  border-bottom: 1px solid #D6D594;
+  color: #000;
 }
+#header a {
+  text-decoration: none;
+} 
 strong {
   font-weight: bold; 
 }
@@ -17,26 +18,28 @@ em {
   font-style: italic; 
 }
 small {
-	font-size: 0.9em;
+  font-size: 0.9em;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; 
 }
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 h2 {
-	font-size: 1.5em;
-	margin: 0.83em 0;
-}  
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h2.subcontent {
+  color: #000;
+}
 h3 {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 p {
   margin-bottom: .5em; 
 }
-
 hr {
   height: 1px;
   margin: 1em 0;
@@ -50,39 +53,41 @@ blockquote {
   padding: .2em 0 .2em 1em; 
 }
 ul.square li {
-	list-style: square;
-	margin-left: 20px;
+  list-style: square;
+  margin-left: 20px;
 }
+
+
 /* Layout */
 body {
-	color: #414141;
-	font: 1em/1.5 Georgia, Helvetica, Arial, sans-serif;
-	background: url('/images/fabric_1.png');
-	border-top: 5px solid #6A6A6A;
+  color: #1F1F1F;
+  font: 1em/1.5 "Raleway", Helvetica, sans-serif;;
+  background-color: #FAFAFA;
+  border-top: 5px solid #00C6B2;
 }
 #header {
-	width: 100%;
-	height: 84px;
-	margin: 30px 0 0 0;
-} 
+  width: 100%;
+  height: 84px;
+  margin: 30px 0 0 0;
+}
 #container {
   width: 500px;
   margin: 0 auto;
 }  
 #container .left, #container .right {
-	width: 245px;
-	float: left;
+  width: 245px;
+  float: left;
 } 
 #container .right {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 #site-description {
-	display: none;
+  display: none;
 } 
 
 h2.subcontent {
-	margin: 2.5em 0 0.83em;
+  margin: 2.5em 0 0.83em;
 }
 
 /* Index */
@@ -100,7 +105,7 @@ div.post span.sidebar {
   border-right: 1px dotted #999;
   padding-right: 10px;
   display: block;
-	font-size: .8em;
+  font-size: .8em;
   color: #999;
   font-style: italic;
 }
@@ -113,53 +118,55 @@ div.post span.extra {
   border-right: 1px dotted #999;
   padding-right: 10px;
   display: block;
-	font-size: .8em;
+  font-size: .8em;
   color: #999;
   font-style: italic;
 }
 /* CV */
 .hresume .vcard {
-	overflow: hidden;
-	background: url('/images/I.jpg') right top no-repeat;
+  overflow: hidden;
+  background: url('/images/I.jpg') right top no-repeat;
 } 
 .hresume h2 {
-	margin: 1.5em 0 1.1em;
+  margin: 1.5em 0 1.1em;
 }
 .hresume ul li {
-	list-style: none;
-	margin: 10px 0 5px 190px;
+  list-style: none;
+  margin: 10px 0 5px 190px;
 }
 .hresume ul li span {
-	display: block;
-	width: 190px;
-	margin-left: -190px;
-	float: left;
-	font-size: 0.9em;
+  display: block;
+  width: 190px;
+  margin-left: -190px;
+  float: left;
+  font-size: 0.9em;
 }
 .hresume ul li strong {
-	display: block;
-	color: #000;
+  display: block;
+  color: #000;
 }
 .hresume ul li .five_stars {
-	background: url(/images/5-stars.jpg) center right no-repeat;
+  background: url(/images/5-stars.jpg) center right no-repeat;
 }
 .hresume ul li .four_stars {
-	background: url(/images/4-stars.jpg) center right no-repeat;
+  background: url(/images/4-stars.jpg) center right no-repeat;
 }
 .hresume ul li .three_stars {
-	background: url(/images/3-stars.jpg) center right no-repeat;
+  background: url(/images/3-stars.jpg) center right no-repeat;
 }
 .hresume ul li .two_stars {
-	background: url(/images/2-stars.jpg) center right no-repeat;
+  background: url(/images/2-stars.jpg) center right no-repeat;
 }
 .hresume ul li .one_stars {
-	background: url(/images/1-stars.jpg) center right no-repeat;
+  background: url(/images/1-stars.jpg) center right no-repeat;
 }         
 .hresume ul li .zero_stars {
-	background: url(/images/0-stars.jpg) center right no-repeat;
+  background: url(/images/0-stars.jpg) center right no-repeat;
 }
 .hresume ul li small {
-	display: block;
-	font-size: 0.75em;
-	color: #999;
+  display: block;
+  font-size: 0.75em;
+  color: #999;
 }
+
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}

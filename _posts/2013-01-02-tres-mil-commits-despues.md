@@ -2,7 +2,7 @@
 layout: post
 title: Tres mil commits después
 description: Tres años después, tres mil quinientos commits después dejo de dedicarme al desarrollo web para empezar a hacer mi proyecto final de carrera.
-categories: [work, master, thesis] 
+categories: work master thesis 
 ---
 
 ![github-graphs](/images/github-graphs.jpg)    
