@@ -10,18 +10,18 @@ a:hover {
 }
 #header a {
   text-decoration: none;
-} 
+}
 strong {
-  font-weight: bold; 
+  font-weight: bold;
 }
 em {
-  font-style: italic; 
+  font-style: italic;
 }
 small {
   font-size: 0.9em;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; 
+  font-weight: normal;
 }
 h1 {
   font-size: 2em;
@@ -38,7 +38,7 @@ h3 {
   font-size: 1.2em;
 }
 p {
-  margin-bottom: .5em; 
+  margin-bottom: .5em;
 }
 hr {
   height: 1px;
@@ -50,7 +50,7 @@ hr {
 blockquote {
   border-left: 1px #ccc dotted;
   margin: 0 0 1em 1.6em;
-  padding: .2em 0 .2em 1em; 
+  padding: .2em 0 .2em 1em;
 }
 ul.square li {
   list-style: square;
@@ -67,7 +67,7 @@ body {
 #container {
   width: 500px;
   margin: 0 auto;
-}  
+}
 #header {
   width: 100%;
   margin: 2em 0 3em 0;
@@ -88,7 +88,7 @@ body {
 #content .left, #content .right {
   width: 245px;
   float: left;
-} 
+}
 #content .right {
   margin-left: 10px;
 }
@@ -131,8 +131,8 @@ div.post span.extra {
 /* CV */
 .hresume .vcard {
   overflow: hidden;
-  background: url('/images/I.jpg') right top no-repeat;
-} 
+  background: url('/images/I.png') right top no-repeat;
+}
 .hresume h2 {
   margin: 1.5em 0 1.1em;
 }
@@ -151,7 +151,7 @@ div.post span.extra {
   color: #000;
 }
 .hresume ul li .skills {
-  float: right; 
+  float: right;
 }
 .hresume ul li small {
   display: block;
