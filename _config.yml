@@ -1,5 +1,36 @@
-markdown: kramdown
-highlighter: true
+# Permalinks
+permalink:           pretty
 
-lsi:         false
-permalink:   /:year/:month/:title/
+# Setup
+title:               Jordi Villar
+tagline:             R&D engineer from Barcelona.
+url:                 http://jordivillar.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Jordi Villar
+  url:               https://github.com/jrdi
+  email:             jrdi.villlar@gmail.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/jrdi/jrdi.github.com
+google_analytics:    UA-21844582-1
+twitter:             jrdi
+github:              jrdi
+linkedin:            jordivillar
+
+# Gems
+gems:
+  - jekyll-gist
+  - jekyll-paginate

@@ -1,47 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="I am 28 years old, born in Barcelona, Spain. I am a telecommunications engineer. I work as a software developer working on machine learning and data mining related areas with skills in Ruby, Ruby on Rails and C++." />
+<html lang="en">
 
-    <meta name="keywords" content="jordi, jordi villar, software developer, web developer, web, telecommunications, engineer, ruby, c, mysql, freelance, ruby on rails, barcelona, computer vision, image processing, imagery, algorithms,
-    data mining, data, data science, machine learning" />
-
-    <link rel="canonical" href="http://jordivillar.com/" />
-    <title>{{ page.title }} · Jordi Villar</title>
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/css/font_awesome.css" />
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-  </head>
+  {% include head.html %}
 
   <body>
-    <div id="container">
-      <div id="header">
-        <h1 id="site-title"><a href="/">Jordi Villar</a></h1>
-        <div class="right">
-          <a href="/cv"><i class="icon-file"></i></a>
-          <a href="http://github.com/jrdi"><i class="icon-github"></i></a>
-        </div>
-      </div>
 
-      <div id="content">
+    <div class="row">
+      <div class="large-12 large-centered columns">
+
+        <header class="masthead">
+          <img src="{{ site.baseurl }}/public/profile.jpg" alt="Jami Gibbs">
+        </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
         {{ content }}
       </div>
+
+      <!--main>
+        <h2>Latest Work</h2>
+        {% for post in site.posts %}
+          <div class="project-post">
+            <h3><a href="{{ post.git }}">{{ post.title }}</a></h3>
+            {{ post.content }}
+          </div>
+        {% endfor %}
+      </main-->
+
+      <footer>
+        <h2>Contact Me</h2>
+
+        <p>
+        Send me an <a href="mailto:{{ site.author.email }}?Subject=Hello,%20Jordi!">email</a> or ping me on <a href="https://twitter.com/{{ site.twitter }}">Twitter</a>. I’m also on <a href="https://github.com/{{ site.github }}">Github</a> and <a href="https://www.linkedin.com/in/{{ site.linkedin }}
+">Linkedin</a> if you’re into that sort of thing.
+        </p>
+
+        <p class="copyright">
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+        </p>
+      </footer>
+
     </div>
 
-    <script type="text/javascript">
+    <div class="large-2 large-offset-1 columns social">
+      <ul>
+        <li><a href="https://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-21844582-1']);
-      _gaq.push(['_trackPageview']);
+  </div>
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    {% if site.google_analytics %}
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', '{{ site.google_analytics }}', 'auto');
+       ga('send', 'pageview');
+     </script>
+    {% endif %}
 
-    </script>
   </body>
 </html>
